@@ -9,6 +9,13 @@ categories = ['Family Law', 'Corporate Law', 'Criminal Law', 'Intellectual Prope
               'Constitutional Law', 'Medical Law', 'Human Rights Law', 'Real Estate Law', 'Media and Entertainment Law',
               'Environmental Law', 'Consumer Protection Law', 'Banking and Finance Law', 'Immigration Law', 'Labor Law']
 
+
+
+@app.route("/")
+def home():
+    return "Hello world!!!"
+
+
 @app.route('/user-classify', methods=['POST'])
 def user_classify():
     try:
